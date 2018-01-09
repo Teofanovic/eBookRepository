@@ -1,0 +1,9 @@
+package com.sf13.uros.eBookRepository.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.sf13.uros.eBookRepository.model.Category;
+
+public interface CategoryRepository extends JpaRepository<Category, Integer> {
+
+}
