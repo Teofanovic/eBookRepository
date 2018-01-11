@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Data;
 
 @Entity
@@ -23,6 +25,7 @@ public class Category {
 	@Column(name = "name", nullable = false, length = 30)
 	private String name;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
 	private List<User> users;
 }

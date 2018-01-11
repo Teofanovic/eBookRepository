@@ -24,8 +24,8 @@ public class User {
 	@Column(name = "last_name", nullable = false, length = 30)
 	private String lastName;
 
-	@Column(name = "user_name", nullable = false, length = 10, unique = true)
-	private String userName;
+	@Column(name = "username", nullable = false, length = 10, unique = true)
+	private String username;
 
 	@Column(name = "password", nullable = false)
 	private String password;

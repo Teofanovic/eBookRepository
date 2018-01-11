@@ -3,11 +3,13 @@ package com.sf13.uros.eBookRepository.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sf13.uros.eBookRepository.model.Language;
 import com.sf13.uros.eBookRepository.repository.LanguageRepository;
 import com.sf13.uros.eBookRepository.serviceInterface.LanguageServiceInterface;
 
+@Service
 public class LanguageService implements LanguageServiceInterface {
 
 	@Autowired
